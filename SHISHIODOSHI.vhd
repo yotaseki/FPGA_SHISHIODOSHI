@@ -17,7 +17,7 @@ architecture RTL of SHISHIODOSHI is
 	constant MAXCOUNT	: std_logic_vector(2 downto 0) := "100"; -- 250 * 4 msec
 	constant ZEROCOUNT	: std_logic_vector(2 downto 0) := "000";
 	signal STATE		: std_logic_vector(2 downto 0); -- for Animation
-	signal REG_TANK		: std_logic_vector(5 downto 0);
+	signal REG_TANK		: std_logic_vector(6 downto 0);
 	constant TANK_FULL	: std_logic_vector(6 downto 0) := "0111100"; -- 60
 	constant TANK_MID	: std_logic_vector(6 downto 0) := "0011110"; -- 30
 	constant TANK_EMPTY : std_logic_vector(6 downto 0) := "0000000";
